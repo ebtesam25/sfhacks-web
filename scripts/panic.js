@@ -1,3 +1,4 @@
+
 const mainScript = [
 	"Begin by finding a comfortable position, but one in which you will not fall asleep. Sitting on the floor with your legs crossed is a good position to try.",
 
@@ -80,12 +81,15 @@ const changeInstruction = () => {
 		document.querySelector("#main-instruction").innerHTML = "Good Job!";
 	}
 	document.querySelector("#main-instruction").innerHTML = mainScript[index++];
-};
+	 
+}
 let timer = 10;
 const changeTimer = () => {
 	if (timer == 0) {
 		timer = 10;
 		changeInstruction();
+		window.speechSynthesis.speak(new SpeechSynthesisUtterance(document.querySelector("#main-instruction").innerHTML));
+		
 	}
 	document.querySelector("#timer").innerHTML = timer--;
 };

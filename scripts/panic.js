@@ -88,6 +88,11 @@ const changeTimer = () => {
 	if (timer == 0) {
 		timer = 10;
 		changeInstruction();
+		window.speechSynthesis.speak(
+			new SpeechSynthesisUtterance(
+				document.querySelector("#main-instruction").innerHTML
+			)
+		);
 	}
 	document.querySelector("#timer").innerHTML = timer--;
 };

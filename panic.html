@@ -26,5 +26,8 @@
         </div>
       </d>
     </main> 
+    <script>
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(document.querySelector("#main-instruction").innerHTML));
+    </script>
   </body>
 </html>

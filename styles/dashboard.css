@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+#presentation {
+  font-family: "Comfortaa";
+  height: 100vh;
+  color: white;
+}
+
+#presentation h1 {
+  font-size: 28pt;
+}
+
+#container {
+  height: 100%;
+}
+
+main {
+  height: 100vh;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+body {
+  overflow: hidden;
+}
+
+#videofeed {
+  margin: 1rem 1rem;
+  border-radius: 20px;
+  height: 50vh;
+  width: 40vw;
+  background-color: black;
+}

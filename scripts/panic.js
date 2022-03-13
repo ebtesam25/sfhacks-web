@@ -73,15 +73,17 @@ const mainScript = [
 	"Sit for a few moments more, enjoying how relaxed you feel, and experiencing your body reawaken and your mind returning to its usual level of alertness.",
 
 	"Slowly return to a standing position, and continue with the rest of your day, feeling re-energized.",
+
+	"Goodjob!",
 ];
 let index = 0;
+let timer = 10;
 const changeInstruction = () => {
-	if (index == mainScript.length - 1) {
-		document.querySelector("#main-instruction").innerHTML = "Good Job!";
+	if (index == mainScript.length) {
+		window.location.replace("/");
 	}
 	document.querySelector("#main-instruction").innerHTML = mainScript[index++];
 };
-let timer = 10;
 const changeTimer = () => {
 	if (timer == 0) {
 		timer = 10;

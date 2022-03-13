@@ -1,5 +1,3 @@
-const button = document.querySelector("#startbutton");
-
-button.addEventListener("click", () =>
-  window.location.assign("/dashboard.html")
-);
+const navigate = () => {
+	window.location.replace("./dashboard.html");
+};

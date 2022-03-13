@@ -10,6 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <link href="./styles/dashboard.css" rel="stylesheet">
+  <script src="./scripts/dashboard.js"></script>
 
   <title>Studybreathe | Dashboard</title>
 </head>
@@ -17,17 +18,21 @@
  <main class="h-full">
    <div id="container" class="container-xl h-full">
      <div id="presentation" class="d-flex flex-column justify-content-center align-items-center">
-       <h1>Nothing can stop you, if you set your mind on it. March on!</h1>
-       <div id="videofeed"></div>
-       <h1>Good job, you seem calm!</h1>
+       <h1 style="font-size: 5vh; text-align: center;">Nothing can stop you, if you set your mind on it. March on!</h1>
+        <video autoplay id="videofeed"></video>
+       <h1 id="messages" style="font-size: 5vh; text-align: center;">Good job, you seem calm!</h1>
      <div id="indicator">
-       <div class="row justify-content-evenly">
-        <div class="col">Heart rate</div>
-        <div class="col">Nail Biting</div>
-       </div>
-       <div class="row justify-content-evenly">
-        <div class="col">Breathing</div>
-        <div class="col">etc</div>
+       <div class="row">
+        <div class="col">
+          <p class="category-names">Heartrate:</p>
+          <p class="category-value" id="heartrate-value">50</p>
+        </div>
+        <div class="col">
+          <p class="category-names">Action:</p>
+          <p class="category-value" id="action-value">crying</p></div>
+        <div class="col">
+          <p class="category-names">Result:</p>
+          <p class="category-value" id="result-value">depresi</p></div>
        </div>
      </div>
      </div>

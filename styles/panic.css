@@ -1,5 +1,5 @@
 .clock-circle {
-	border: 10px;
+	border: 20px;
 	border-radius: 1000px;
 	border-style: solid;
 	padding: 50px;
@@ -16,5 +16,9 @@
 }
 .kontol {
 	text-align: center;
-	font-size: 50px;
+	font-size: 5vh;
+}
+.meditation-image {
+	width: 50vh;
+	height: 50vh;
 }

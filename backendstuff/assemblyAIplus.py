@@ -5,11 +5,11 @@ import gcptextsentiment
 endpoint = "https://api.assemblyai.com/v2/transcript"
 
 json = {
-  "audio_url": "https://storage.googleapis.com/hackybucket/recording2.wav"
+  "audio_url": "https://storage.googleapis.com/hackybucket/recording2.wav" ##replace with actual audio
 }
 
 headers = {
-    "authorization": "5240193dbe964e3cbaa210cbaaba108f",
+    "authorization": "get ur own key here",
     "content-type": "application/json"
 }
 
@@ -22,7 +22,7 @@ tid = response.json()['id']
 endpoint = "https://api.assemblyai.com/v2/transcript/" + tid
 
 headers = {
-    "authorization": "5240193dbe964e3cbaa210cbaaba108f",
+    "authorization": "get ur own key here",
 }
 
 response = requests.get(endpoint, headers=headers)

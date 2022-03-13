@@ -1,0 +1,20 @@
+.clock-circle {
+	border: 10px;
+	border-radius: 1000px;
+	border-style: solid;
+	padding: 50px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+}
+.kontol {
+	text-align: center;
+	font-size: 50px;
+}
